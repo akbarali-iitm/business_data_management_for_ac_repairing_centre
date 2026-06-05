@@ -259,13 +259,12 @@ Expected business improvements include:
 │
 ├── visuals/
 │   ├── seasonal_demand_analysis.png
+│   ├── Seasonal Unit Price Trends for Spare Parts (2024).png
 │   ├── arima_forecast.png
 │   └── workforce_optimization.png
 │
-├── src/
-│   ├── preprocessing.py
-│   ├── forecasting.py
-│   └── workforce_optimization.py
+├── certificates/
+│   └── best_course_project_certificate.pdf
 │
 ├── requirements.txt
 └── README.md
