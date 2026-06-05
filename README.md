@@ -245,6 +245,9 @@ Expected business improvements include:
 ## Repository Structure
 
 ```text
+├── certificates/
+│   └── best_course_project_certificate.pdf
+|
 ├── dataset/
 │   ├── BDM - Procurement Cost Data.csv
 │   └── BDM - Workforce Management Data.csv
@@ -263,10 +266,6 @@ Expected business improvements include:
 │   ├── arima_forecast.png
 │   └── workforce_optimization.png
 │
-├── certificates/
-│   └── best_course_project_certificate.pdf
-│
-├── requirements.txt
 └── README.md
 ```
 
