@@ -56,31 +56,58 @@ The primary objectives of this project were:
 
 ## Dataset
 
-The analysis was performed on **real-world business data** collected from operational records of an air conditioner repair center.
+The analysis was conducted using **real-world operational business data** collected from an air conditioner repair center for the period **January 2023 to December 2024**.
 
-### Data Period
+The original records were manually maintained by the business and later digitized into spreadsheets for structured analysis and modeling.
 
-**January 2023 – December 2024**
+The cleaned datasets used in this project are available in the `dataset/` directory.
 
-### Data Categories
+### Procurement Dataset (`procurement_data.csv`)
 
-#### Procurement Data
+This dataset contains historical spare-part procurement and inventory information used to analyze seasonal demand patterns and procurement cost fluctuations.
+
+The dataset includes:
 
 * Spare part names
-* Seasonal unit costs
-* Historical demand
-* Quantity purchased
-* Procurement trends
+* Seasonal unit cost variations
+* Demand trends across 2023 and 2024
+* Quantity purchased during different seasonal periods
 
-#### Workforce Data
+The data is structured around three operational periods:
+
+* **January – March**
+* **April – July**
+* **August – December**
+
+This dataset was primarily used for:
+
+* Seasonal demand analysis
+* Procurement cost trend analysis
+* Inventory planning
+* Demand forecasting using the ARIMA model
+
+### Workforce Dataset (`workforce_data.csv`)
+
+This dataset contains monthly service demand and workforce allocation information used to evaluate staffing efficiency and optimize labor planning.
+
+The dataset includes:
 
 * Monthly service requests
 * Number of hired workers
 * Worker handling capacity
 * Required workforce estimation
-* Workforce shortage and excess analysis
+* Worker shortage and excess analysis
 
-The original records were manually maintained and later digitized into spreadsheets for structured analysis.
+This dataset was primarily used for:
+
+* Workforce demand analysis
+* Service load estimation
+* Staffing efficiency evaluation
+* Workforce optimization using Linear Programming
+
+### Data Privacy
+
+The datasets included in this repository are cleaned versions of original business records. Sensitive business information has been removed to maintain confidentiality while preserving analytical integrity for educational and analytical purposes.
 
 ---
 
@@ -219,11 +246,11 @@ Expected business improvements include:
 
 ```text
 ├── dataset/
-│   ├── procurement_data.csv
-│   └── workforce_data.csv
+│   ├── BDM - Procurement Cost Data.csv
+│   └── BDM - Workforce Management Data.csv
 │
 ├── notebooks/
-│   └── analysis.ipynb
+│   └── business_optimization_analysis.ipynb
 │
 ├── reports/
 │   ├── proposal_report.pdf
@@ -243,6 +270,30 @@ Expected business improvements include:
 ├── requirements.txt
 └── README.md
 ```
+
+---
+
+## Analysis Notebook
+
+The complete end-to-end implementation of the project is available in the Jupyter notebook below:
+
+[Open Analysis Notebook](./notebooks/business_optimization_analysis.ipynb)
+
+The notebook contains the full analytical workflow, including:
+
+* Data preprocessing and cleaning
+* Exploratory data analysis (EDA)
+* Seasonal demand analysis
+* Procurement cost trend analysis
+* Statistical analysis and visualization
+* ARIMA-based spare-part demand forecasting
+* Workforce requirement estimation
+* Linear Programming–based workforce optimization
+* Business insights and final recommendations
+
+The analysis was developed in **Google Colab using Python** and includes reproducible workflows for forecasting, optimization, and operational decision-making.
+
+To explore the complete implementation, open the notebook directly from the `notebooks/` directory.
 
 ---
 
